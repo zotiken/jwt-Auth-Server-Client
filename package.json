@@ -1,25 +1,23 @@
 {
-  "name": "jwt",
-  "version": "1.0.0",
-  "description": "JWT react node express",
-  "main": "server.js",
+  "name": "contacts",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./bin/www",
+    "client": "npm run start --prefix client",
+    "app": "concurrently \"npm run start\" \"npm run client\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zotiken/jwt-Auth-Server-Client.git"
-  },
-  "keywords": [
-    "react",
-    "jwt",
-    "node",
-    "express"
-  ],
-  "author": "Lelyavin N",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zotiken/jwt-Auth-Server-Client/issues"
-  },
-  "homepage": "https://github.com/zotiken/jwt-Auth-Server-Client#readme"
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.3.0",
+    "config": "^3.3.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.4",
+    "morgan": "~1.9.1",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
+  }
 }

@@ -1,0 +1,7 @@
+{
+  "app": {
+    "port": "5000",
+    "mDb": "mongodb+srv://zotiken:<password>@cluster0.y3eiy.azure.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "secret": "private!@#fv"
+}
+}
