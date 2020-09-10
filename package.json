@@ -1,0 +1,25 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "JWT react node express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zotiken/jwt-Auth-Server-Client.git"
+  },
+  "keywords": [
+    "react",
+    "jwt",
+    "node",
+    "express"
+  ],
+  "author": "Lelyavin N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zotiken/jwt-Auth-Server-Client/issues"
+  },
+  "homepage": "https://github.com/zotiken/jwt-Auth-Server-Client#readme"
+}
