@@ -18,8 +18,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use('/app/api/auth', authRouter);
 app.use('/users', usersRouter);
 app.get("/",(req,res)=>{
-    console.log(path.resolve(__dirname, "index.html"))
-    res.sendFile(path.resolve(__dirname, "index.html"))
+    console.log(path.resolve(__dirname,'build', "index.html"))
+    res.sendFile(path.resolve(__dirname,'build', "index.html"))
 })
 
 module.exports = app;
