@@ -15,10 +15,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'build')));
-app.use('/app/api/auth', authRouter);
-app.use('/users', usersRouter);
-app.get("/",(req,res)=>{
-    console.log(__dirname)
+// app.use('/app/api/auth', authRouter);
+// app.use('/users', usersRouter);
+app.get("/*",(req,res)=>{
     res.sendFile(path.join(__dirname,'build', "index.html"))
 })
 
