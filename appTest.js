@@ -18,11 +18,12 @@ const app = express();
 // app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/app/api/auth', authRouter);
 // app.use('/users', usersRouter);
-app.get("/ass",(req,res)=>{
-    res.send("<h1>Hello World!</h1>")
-})
-
-app.listen( port || 80 ,()=>{
+app.get('/', function(req, res) {
+    console.log("fd")
+    res.sendFile(path.join(__dirname,"public", 'index.html'));
+  });
+app.listen( port ,
+    ()=>{
     console.log('!dfdsbfdbfd')
 })
 
