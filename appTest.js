@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+var port = process.env.PORT || 3000;
 // const cookieParser = require('cookie-parser');
 // const logger = require('morgan');
 // const mongoose = require('mongoose');
@@ -21,7 +22,7 @@ app.get("/",(req,res)=>{
     res.send("<h1>Hello World!</h1>")
 })
 
-app.listen( process.env.PORT || 3000 ,()=>{
+app.listen( port || 3000 ,()=>{
     console.log('!dfds')
 })
 
