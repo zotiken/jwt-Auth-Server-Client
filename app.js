@@ -14,12 +14,12 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname,"client", 'build')));
 app.use('/app/api/auth', authRouter);
 app.use('/users', usersRouter);
 app.get("/",(req,res)=>{
-    console.log(path.resolve(__dirname, "client", "build", "index.html"))
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+    console.log(path.resolve(__dirname, "index.html"))
+    res.sendFile(path.resolve(__dirname, "index.html"))
 })
 
 module.exports = app;
