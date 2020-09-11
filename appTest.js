@@ -18,11 +18,11 @@ const app = express();
 // app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/app/api/auth', authRouter);
 // app.use('/users', usersRouter);
-app.get("/",(req,res)=>{
+app.get("/ass",(req,res)=>{
     res.send("<h1>Hello World!</h1>")
 })
 
-app.listen( port || 3000 ,()=>{
+app.listen( port || 80 ,()=>{
     console.log('!dfds')
 })
 
