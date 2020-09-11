@@ -27,12 +27,12 @@ var server = http.createServer(app);
  */
 async function start(params) {
   try {
-    await mongoose.connect(config.get('app.mDb').replace('<password>', 'mongodb'), {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false,
-      useCreateIndex: true
-    });
+    // await mongoose.connect(config.get('app.mDb').replace('<password>', 'mongodb'), {
+    //   useNewUrlParser: true,
+    //   useUnifiedTopology: true,
+    //   useFindAndModify: false,
+    //   useCreateIndex: true
+    // });
     server.listen(port);
     server.on('error', onError);
     server.on('listening', onListening);
