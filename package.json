@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "server.dev": "nodemon ./bin/www",
-    "server": "node ./bin/www",
+    "server": "node appTest.js",
     "client": "npm run build --prefix client",
     "client.dev": "npm run build --prefix client",
     "build": "npm run server",
+    "start": "npm run server",
     "start.dev": "concurrently \"npm run server.dev\" \"npm run client.dev\""
   },
   "dependencies": {
