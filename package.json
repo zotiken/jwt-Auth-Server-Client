@@ -10,7 +10,7 @@
     "server": "node appTest.js",
     "client": "npm run build --prefix client",
     "client.dev": "npm run build --prefix client",
-    // "build": "npm run server",
+    "build": "npm install",
     "start": "node appTest.js",
     "start.dev": "concurrently \"npm run server.dev\" \"npm run client.dev\""
   },
