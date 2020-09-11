@@ -1,7 +1,7 @@
 {
   "name": "contacts",
   "version": "0.0.0",
-  "private": true,
+  "main": "index.js",
   "scripts": {
     "server.dev": "nodemon ./bin/www",
     "server": "node appTest.js",
