@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "client": "npm run start --prefix client",
-    "app": "concurrently \"npm run start\" \"npm run client\""
+    "server.dev": "nodemon ./bin/www",
+    "server": "node ./bin/www",
+    "client": "npm run build --prefix client",
+    "client.dev": "npm run build --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start.dev": "concurrently \"npm run server.dev\" \"npm run client.dev\""
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
