@@ -5,6 +5,7 @@
   "engines": {
     "node": "12.x"
   },
+  "homepage": "https://lelyavin-app-node.herokuapp.com/",
   "scripts": {
     "server.dev": "nodemon ./bin/www",
     "server": "node ./bin/www",
