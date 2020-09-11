@@ -24,6 +24,7 @@ app.get('/', function(req, res) {
   });
 app.listen( port ,
     ()=>{
+        console.log(port,process.env.PORT);
     console.log('!dfdsbfdbfd')
 })
 
