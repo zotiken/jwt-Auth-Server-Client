@@ -17,8 +17,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/app/api/auth', authRouter);
 app.use('/users', usersRouter);
-app.use("*",(req,res)=>{
-    res.sendFile(path.resolve(__dirname, "client","build","index.html"))
+app.get("*",(req,res)=>{
+    res.send("First")
 })
 
 module.exports = app;
