@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 // const cookieParser = require('cookie-parser');
 // const logger = require('morgan');
 // const mongoose = require('mongoose');
@@ -20,11 +20,11 @@ const app = express();
 // app.use('/users', usersRouter);
 app.get('/', function(req, res) {
     console.log("fd")
-    res.sendFile(path.join(__dirname,"public", 'index.html'));
+    res.send("faEGrghzdsf");
   });
-app.listen( process.env.PORT ,
+app.listen(port ,
     ()=>{
-        console.log(port,process.env.PORT);
+        console.log(port, process.env.PORT);
     console.log('!dfdsbfdbfd')
 })
 
