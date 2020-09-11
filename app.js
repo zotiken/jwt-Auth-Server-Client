@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/app/api/auth', authRouter);
 app.use('/users', usersRouter);
 app.get("/",(req,res)=>{
-    res.sendFile(__dirname, "client", "build", "index.html")
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
 })
 
 module.exports = app;
