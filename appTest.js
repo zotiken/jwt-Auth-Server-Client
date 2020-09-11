@@ -21,7 +21,7 @@ app.get("*",(req,res)=>{
     res.send("First")
 })
 
-app.listen( 3000 ,()=>{
+app.listen( 80 ,()=>{
     console.log('!dfds')
 })
 
