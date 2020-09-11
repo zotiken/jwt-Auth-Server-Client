@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
     console.log("fd")
     res.sendFile(path.join(__dirname,"public", 'index.html'));
   });
-app.listen( port ,
+app.listen( process.env.PORT ,
     ()=>{
         console.log(port,process.env.PORT);
     console.log('!dfdsbfdbfd')
