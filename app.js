@@ -19,8 +19,8 @@ app.use(express.static(path.join(__dirname)));
 // app.use('/app/api/auth', authRouter);
 // app.use('/users', usersRouter);
 app.get("/*",(req,res)=>{
-    res.send("gsdgrhhsx")
-    // res.sendFile(path.join(__dirname,'../build', "index.html"))
+    // res.send("gsdgrhhsx")
+    res.sendFile(path.join(__dirname,'build', "index.html"))
 })
 
 module.exports = app;
