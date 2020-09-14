@@ -9,6 +9,7 @@ export default function access(allowed) {
         return (
             <Switch>
                 <Route path="/" exact>
+                    <h1>Home</h1>
                 </Route>
                 <Redirect to="/" />
             </Switch>
